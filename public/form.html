@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body style="background-image: url('/public/background.jpg');">
+        <div id="timer" >Time left: 10:00</div>
+        <form id="essayForm" >
+        <!-- Questions will be dynamically inserted here -->
+            <div id="questionsContainer"></div>
+     
+        <div id="navigationButtons" >
+            <div class="button-container">
+                <button type="button" id="prevButton" class="myButon">Previous</button>
+                <button type="button" id="nextButton" class="myButon">Next</button>
+            </div>
+            <button type="submit" id="submitButton" class="myButton">Submit</button>
+        </div>
+    </form>
+    <script src="form.js"></script>
+</body>
+</html>

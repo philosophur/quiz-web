@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essay Form</title>
+    <link rel="stylesheet" href="style.css">
+    <div class="font1">
+        <h1>Planning and Design</h1>
+        <h2>CAT II</h2>
+    </div>
+   
+</head>
+<body style="background-image: url('/public/start.jpg');">
+    <button id="startButton" class="myButton2">Start</button>
+    <script>
+        document.getElementById('startButton').addEventListener('click', function() {
+            this.style.display = 'none';
+        
+           sessionStorage.setItem('buttonClicked', 'true');
+            window.location.href = 'form.html';
+        });
+
+        window.addEventListener('load', function() {
+            if (sessionStorage.getItem('buttonClicked') === 'true') {
+                document.getElementById('startButton').style.display = 'none';}
+        });
+    </script>
+</body>
+</html>
